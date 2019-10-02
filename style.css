@@ -1,7 +1,7 @@
 
 <style>
 header {
-}
+
 
 body {
   margin:0;
@@ -17,7 +17,7 @@ display: block;
 }
 .nav{
    background-color:aquamarine;
-    color:green;
+    color:blue;
      list-style:none;
       text-align: right;
        padding: 20px 0 20px 0;
@@ -30,7 +30,7 @@ display: block;
 
 .nav > li > a{
   text-decoration: none;
-   color:green
+   color:green;
 }
 
 .nav > li > a:hover{
@@ -44,7 +44,7 @@ display: block;
      font-size:20px;
       font-weight:bold;
  font-family:Monospace;}
- 
+}
 body {background-color: darkslategray;}
 h1   {color: darkgray;
  text-align:center;
