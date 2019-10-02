@@ -6,7 +6,7 @@ header {
 body {
   margin:0;
   padding:0;
-    background-color: aqua;
+    background-color: #7FFF00;
 }
 img {
 display: block;
@@ -16,8 +16,8 @@ display: block;
   padding-top: 0px;
 }
 .nav{
-   background-color:aqua;
-    color:aqua;
+   background-color:#7FFF00;
+    color:#7FFF00;
      list-style:none;
       text-align: right;
        padding: 20px 0 20px 0;
@@ -30,15 +30,15 @@ display: block;
 
 .nav > li > a{
   text-decoration: none;
-   color:aqua;
+   color:#7FFF00;
 }
 
 .nav > li > a:hover{
-   color:aqua;
+   color:#7FFF00;
 }
 
 .logo{
-  color:green;
+  color:#7FFF00;
    float:left;
     padding-left:25px;
      font-size:20px;
@@ -56,7 +56,7 @@ display: block;
   
 } 
 }
-body {background-color: darkslategray;}
+body {background-color: aqua;}
 h1   {color: darkgray;
  text-align:center;
 
