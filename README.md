@@ -16,7 +16,7 @@ my website
   <li>If you are going to travel take the train or go by bike and try to avoid airplanes or cars/buses.</li>
     <li>If you want/need new clothes go to a vintage store or look in your fathers/mothers wardrobe. it is unique and you can make it your own.</li>
   
-  <li><a href="look.asp"; target:"_blank">look at what you eat</a></li>
+  <li><a href="look.html"; target:"_blank">look at what you eat</a></li>
 
   
 </ul>
