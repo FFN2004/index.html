@@ -1,5 +1,50 @@
 
 <style>
+header {
+}
+
+body {
+  margin:0;
+  padding:0;
+    background-color: blue;
+}
+img {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 0px;
+}
+.nav{
+   background-color:blue;
+    color:green;
+     list-style:none;
+      text-align: right;
+       padding: 20px 0 20px 0;
+}
+
+.nav > li {
+   display:inline-block;
+    padding-right: 50px;
+}
+
+.nav > li > a{
+  text-decoration: none;
+   color:green
+}
+
+.nav > li > a:hover{
+   color:green
+}
+
+.logo{
+  color:green;
+   float:left;
+    padding-left:25px;
+     font-size:20px;
+      font-weight:bold;
+ font-family:Monospace;}
+ 
 body {background-color: darkslategray;}
 h1   {color: darkgray;
  text-align:center;
