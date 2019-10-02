@@ -16,7 +16,7 @@ my website
   
     </div>
    
-    <li><a href="">home</a></li>
+    <li><a href="index.htm">home</a></li>
     <li><a href="clothing.html">clothing</a></li>
     <li>><a href="look.html"; target:"_blank">look at what you eat</a></li>
   
