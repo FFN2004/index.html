@@ -1,21 +1,11 @@
 
-<style>
-
-header {
-}
 
 body {
   margin:0;
-  padding:0;
+  padding:10px;
     background-color: #1E90FF;
 }
-img {
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  padding-top: 0px;
-}
+
 .nav{
    background-color:#1E90FF;
     color:#7FFF00;
@@ -83,4 +73,4 @@ display: block;
   padding-top: 0px;
 
 }
-</style>
+
