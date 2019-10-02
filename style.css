@@ -16,8 +16,8 @@ display: block;
   padding-top: 0px;
 }
 .nav{
-   background-color:aquamarine;
-    color:blue;
+   background-color:aqua;
+    color:aqua;
      list-style:none;
       text-align: right;
        padding: 20px 0 20px 0;
@@ -30,11 +30,11 @@ display: block;
 
 .nav > li > a{
   text-decoration: none;
-   color:green;
+   color:aqua;
 }
 
 .nav > li > a:hover{
-   color:green
+   color:aqua;
 }
 
 .logo{
