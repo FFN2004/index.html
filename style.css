@@ -6,7 +6,7 @@ header {
 body {
   margin:0;
   padding:0;
-    background-color: blue;
+    background-color: aqua;
 }
 img {
 display: block;
@@ -16,7 +16,7 @@ display: block;
   padding-top: 0px;
 }
 .nav{
-   background-color:blue;
+   background-color:aquamarine;
     color:green;
      list-style:none;
       text-align: right;
