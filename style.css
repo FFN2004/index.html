@@ -12,6 +12,12 @@ body {
 .hamburger{
   float:left;
 }
+
+.nav-closed{
+ text-align: right;
+  dispay: flex;
+  background:#00008B;
+}
 .nav{
    background-color:#1E90FF;
     color:#7FFF00;
