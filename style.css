@@ -1,8 +1,4 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+
 
 body {
   margin:0;
@@ -20,7 +16,6 @@ body {
 .nav-closed{
  text-align: right;
   dispay: flex;
-   color:#00008B;
   width: 100%;
   height: 5vh;
 }
