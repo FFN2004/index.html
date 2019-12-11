@@ -5,6 +5,10 @@ body {
   padding:10px;
     background-color: #1E90FF;
 }
+.menu {
+  cursor: pointer;
+  opacity: 0.5;
+}
 
 .nav{
    background-color:#1E90FF;
