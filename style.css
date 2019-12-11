@@ -20,7 +20,7 @@ body {
 .nav-closed{
  text-align: right;
   dispay: flex;
-  background:#00008B;
+   color:#00008B;
   width: 100%;
   height: 5vh;
 }
