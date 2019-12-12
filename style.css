@@ -39,8 +39,8 @@ body {
 }
 
 .opened{
-  clip-path: circle(600px at -50% -25%);
-  -webkit-clip-path: circle(600px at -50% -25%);
+  clip-path: circle(800px at -50% -25%);
+  -webkit-clip-path: circle(800px at -50% -25%);
   
 }
 .nav > li {
