@@ -20,10 +20,23 @@ body {
 }
 .nav{
    background-color:#1E90FF;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 50%;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px black;
+  
     color:#7FFF00;
      list-style:none;
       text-align: right;
        padding: 20px 0 20px 0;
+  clip-path: circle(50px at -50% -25%);
+  -webkit-clip-path: circle(50px at -50% -25%);
+  
+  transition: all 1s ease-out;
 }
 
 .nav > li {
