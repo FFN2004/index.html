@@ -9,15 +9,14 @@ body {
   cursor: pointer;
   opacity: 0.5;
 }
-.hamburger{
-  float:left;
-}
 
 .nav-closed{
  text-align: right;
   dispay: flex;
-  width: 100%;
+  width: 90%;
   height: 5vh;
+  margin:auto;
+  align-items:center;
 }
 .nav{
    background-color:#1E90FF;
