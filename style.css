@@ -39,6 +39,11 @@ body {
   transition: all 1s ease-out;
 }
 
+.opened{
+  clip-path: circle(600px at -50% -25%);
+  -webkit-clip-path: circle(600px at -50% -25%);
+  
+}
 .nav > li {
    display:inline-block;
     padding-right: 50px;
