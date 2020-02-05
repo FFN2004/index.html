@@ -25,12 +25,15 @@
  <ul class="nav">
      
 
-   <li><a href="home.html"; target:"_blank">home</a></li>
-    <li><a href="taakverdeling.html">taakverdeling</a></li>
+   
+    
+   <li><a href="home.html"; target:"_blank";>home</a></li>
+    <li><a href="taakverdeling.html" target:"_blank";>taakverdeling</a></li>
     <li><a href="C4.html"; target:"_blank">C4</a></li>
      <li><a href="A2.html"; target:"_blank">A2</a></li>
-       <li><a href="eigenschappen.html"; target:"_blank">css eigenschappen</a></li>   
+       <li><a href="eigenschappen.html"; target:"_blank">css eigenschappen</a></li> 
    </ul>
+
 
    <div class="banner">
    
@@ -38,21 +41,10 @@
   
   
   </div>
-<h1 style="text-shadow: 4px 4px 2px #00FFFF">Filippine Nuijten</h1>
-<p>Hello, i am Filippine Nuijten. I am fifteen years old. I have lived in amsterdam for the first fifteen years of my live. The year of 2019 i moved to hilversum. My family and I are happy with the new house. We start renovations hopefully in 2020. </p>
-    
-
-<p>on this website you can find some interresying things about me.</p>
-<ul style="list-style-type:circle;">
-  <li>Things i like to do;</li>
-  <li>My family;</li>
-    <li> </li>
-   
-  <li></li>
-
-  
-</ul>
+<h1 style="text-shadow: 4px 4px 2px #7FFFD4">C4</h1>
+<p></p>
+<p></p>
 
  <script src="app.js"></script>
 </body>
-  </html>
+</html>
