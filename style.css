@@ -9,13 +9,7 @@ body {
   cursor: pointer;
   opacity: 0.5;
 }
-header {
-  background-color: #1F0F8FF;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
- 
-}
+
 .nav-closed{
   dispay: flex;
   width: 90%;
