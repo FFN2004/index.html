@@ -116,10 +116,10 @@ display: block;
 }
 iframe{
   align:center;
-  width="560";
-  height="315";
-  frameborder="0";
-  allow="accelerometer; encrypted-media;  gyroscope; picture-in-picture";
-  allowfullscreen;
+  width=560px;
+  height=315px;
+  frameborder=0px;
+  font allow="accelerometer; encrypted-media;  gyroscope; picture-in-picture";
+  font: allowfullscreen;
 }
 
