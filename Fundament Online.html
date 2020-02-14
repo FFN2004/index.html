@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <title>Fundament Online </title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Fira+Sans|Merriweather|Montserrat|Space+Mono"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/templates/bootstrap.extra.css?v=v2-20200214"/>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link href="/public/page/css/base.css?v=v2-20200214" rel="stylesheet" type="text/css"/>
+    <link href="/shared/skins/skin-6.css?v=v2-20200214" rel="stylesheet" type="text/css"/>
+
+    <link href="/assets/content.css?v=v2-20200214" rel="stylesheet" type="text/css"/>
+    <link href="/templates/style.css?v=v2-20200214" rel="stylesheet" type="text/css"/>
+    <link href="/templates/sizes.default.css?v=v2-20200214" rel="stylesheet" type="text/css"/>
+
+
+    <link rel="stylesheet" type="text/css"
+          href="/shared/js/featherlight-1.7.13/release/featherlight.min.css?v=v2-20200214"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/shared/js/highlight/styles/foundation.css?v=v2-20200214"/>
+
+    <script src="/shared/ckeditor/ckeditor.js?v=v2-20200214"></script>
+
+    <link rel="shortcut icon" href="/images/fi_favicon.png?v=v2-20200214"/>
+    <link rel="apple-touch-icon" href="/images/fi_favicon.png?v=v2-20200214"/>
+
+    
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3207275-20"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-3207275-20');
+    </script>
+
+
+</head>
+
+<body style="background-color:#ebf0f4; font-family: 'Fira Sans', sans-serif;">
+
+
+
+
+
+
+<!--
+
+			<li style="display:none; " class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/student/methode.php?id=774" id="dropdownHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inhoud</a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdownHeader">
+				<a class="dropdown-item" href="#"><i class="fal fa-th-list fa-fw"></i> Test</a>
+				<a class="dropdown-item" href="#"><i class="fal fa-life-ring fa-fw"></i> Test 2</a>
+			</div>
+			</div>
+
+			</li>
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light static-top sb-navbar" style="">
+    <div class="container">
+        <a class="navbar-brand" href="/student/home/"><img src="/images/1425_logo_fundament.png"
+                                                           style="height:40px;"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto main-menu">
+                <!--<li class="nav-item"><a class="nav-link" href="/student/home/">Start</a></li>-->
+                <!--<li class="nav-item"><a class="nav-link" href="/student/methode.php?id=774">Inhoud</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="/student/results/">Resultaten</a></li>
+                <li class="nav-item"><a class="nav-link" href="/student/messages/">Berichten</a></li>
+                <li class="nav-item"><a class="nav-link" href="/student/search/">Zoeken</a></li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="/student/docent_materiaal/"><i class="fa fa-paperclip"></i> Docentmateriaal</a>
+                </li>
+            </ul>
+
+            
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown" style="padding-top:10px;">
+                    <form action="/student/reportbug.php" name="reportbug" method="POST">
+                        <input type="hidden" value="/student/content.php?paragraaf_id=94653" name="url">
+                        <a href="#" class="reportbug" onclick="submitBug();" alt="Correctiemelding"
+                           title="Correctiemelding">
+                            <div><i style="color:#f37322;" class="fas fa-comments" title="Correctiemelding"></i></div>
+                        </a>
+                    </form>
+
+
+                    <script type="text/javascript">
+                        function submitBug() {
+                            document.reportbug.target = "bugr";
+                            window.open('/student/reportbug.php', 'bugr', 'directories=0,titlebar=0,toolbar=0,location=0,status=0,menubar=0,width=855,height=300');
+                            document.reportbug.submit();
+                        }
+                    </script>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Filippine Nuijten
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right personal-menu" aria-labelledby="dropdownMenu">
+                        <div class="dropdown-item blue">
+                            <div class="row">
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-cog"></i></div>
+                                <div class="col-xs-8" style="padding: 5px;"><span data-toggle="tooltip"
+                                                                                  data-placement="top"
+                                                                                  title=""><a
+                                                href="/student/myaccount/"
+                                                style="">Instellingen</a></span></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="row">
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-unlock-alt"></i></div>
+                                <div class="col-xs-8" style="padding: 5px;"><a href="/student/licenses/">Licenties</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <div class="row">
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-search-minus"></i></div>
+                                <div class="col-xs-8" style="padding: 5px;">
+                                    <a href="javascript:;" id="fs11" class="fs " style="font-size:11px; "
+                                       onClick="changefontsize('11');">11</a>
+                                    <a href="javascript:;" id="fs12" class="fs "
+                                       style="font-size:12px; padding:0px 5px;" onClick="changefontsize('12');">12</a>
+                                    <a href="javascript:;" id="fs13" class="fs "
+                                       style="font-size:13px; padding:0px 5px;" onClick="changefontsize('13');">13</a>
+                                    <a href="javascript:;" id="fs14" class="fs fsactive"
+                                       style="font-size:14px; padding:0px 5px;" onClick="changefontsize('14');">14</a>
+                                    <a href="javascript:;" id="fs15" class="fs "
+                                       style="font-size:15px; padding:0px 5px;" onClick="changefontsize('15');">15</a>
+                                    <a href="javascript:;" id="fs16" class="fs "
+                                       style="font-size:16px; padding:0px 5px;" onClick="changefontsize('16');">16</a>
+                                </div>
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-search-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="row">
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-font"></i></div>
+                                <div class="col-xs-4" style="padding: 5px;">
+                                    <a href="javascript:;" id="ff10" class="ff ffactive"
+                                       style="font-family:'Fira Sans', sans-serif;"
+                                       onClick="changefontfamily('Fira-Sans');">Fira Sans</a><br/>
+                                    <a href="javascript:;" id="ff11" class="ff "
+                                       style="font-family:'Work Sans', sans-serif;"
+                                       onClick="changefontfamily('Work-Sans');">Work Sans</a><br/>
+                                    <a href="javascript:;" id="ff12" class="ff "
+                                       style="font-family:'open-dyslexic', sans-serif;"
+                                       onClick="changefontfamily('open-dyslexic');">Open dyslexic</a>
+                                </div>
+                                <div class="col-xs-4" style="padding: 5px;">
+                                    <a href="javascript:;" id="ff13" class="ff "
+                                       style="font-family:'Montserrat', sans-serif;"
+                                       onClick="changefontfamily('Montserrat');">Montserrat</a><br/>
+                                    <a href="javascript:;" id="ff14" class="ff "
+                                       style="font-family:'Merriweather', sans-serif;"
+                                       onClick="changefontfamily('Merriweather');">Merriweather</a><br/>
+                                    <a href="javascript:;" id="ff15" class="ff "
+                                       style="font-family:'Space Mono', monospace;"
+                                       onClick="changefontfamily('Space-Mono');">Space mono</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item blue">
+                            <div class="row">
+                                <div class="col-xs-2" style="padding: 5px;"><i class="fa fa-sign-out-alt"></i></div>
+                                <div class="col-xs-8" style="padding: 5px;"><a href="https://fundament-online.nl/login.php?logout=true&sid=53f4ed96aa9fa589a8aae60b9ce8e07c">Uitloggen</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="ajcalls"></div>
+
+
+
+
+<header class="page-heading">
+<div class="container">
+
+</div>
+</header>
+
+ <div class="margin30"></div>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-2" style="padding:0px;">
+			<div id="sticker" class="menu-left">
+				<ul>
+					<li class="page"><a href="content.php?id=44632">1. Introductie HTML</a></li>
+					<li class="page-active"><a href="content.php?id=45118">2. Een webpagina maken</a></li>
+					<li class="paragraph-done"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94651">2.1. Inleiding</a></li>
+					<li class="paragraph-done"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94652">2.2. Structuur van een HTML-document</a></li>
+					<li class="paragraph-active"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94653">2.3. De opbouw van een HTML5-document</a></li>
+					<li class="paragraph"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94654">2.4. Tekst opmaken</a></li>
+					<li class="paragraph"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94655">2.5. Hyperlinks en soorten URL&#039;s</a></li>
+					<li class="paragraph"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94656">2.6. Subpagina&#039;s maken</a></li>
+					<li class="paragraph"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94657">2.7. Commentaar</a></li>
+					<li class="paragraph"><div style="margin-left:-18px;position: absolute;width:16px;"></div> <a href="content.php?paragraaf_id=94658">2.8. Opdrachten</a></li>
+					<li class="page"><a href="content.php?id=45119">3. Multimedia</a></li>
+					<li class="page"><a href="content.php?id=45120">4. Opmaak met CSS</a></li>
+					<li class="page"><a href="content.php?id=45121">5. Werken met blokken</a></li>
+				</ul>
+
+
+			
+			</div>
+
+		</div>
+		<div class="col-8" style="top:-170px;">
+
+		<div class="bookmark" style="">
+			<i class="fa fa-bookmark icon-large"></i>
+			<a href="https://fundament-online.nl/student/methode.php?id=774">Fundament 2019 - Kernprogramma</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="https://fundament-online.nl/student/boek.php?id=1937">A: Vaardigheden</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="https://fundament-online.nl/student/hoofdstuk.php?id=9689">2. HTML & CSS</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="https://fundament-online.nl/student/content.php?id=45118">2. Een webpagina maken</a>
+		</div>
+
+		<div class="course" style="font-size:14px; line-height:24px;">
+           <div class="fundament-favorite"><i class="far fa-star"></i> <a href="javascript:;" onclick="setFavoriet(this, '94653', 1);" data-value="1"><span class="fav-text">Toevoegen als favoriet</span></a></div>
+			<h3 class="titel">2.3. De opbouw van een HTML5-document</h3>
+			<div class="ins"><p>Zo bouw je een HTML5-bestand op:</p>
+
+<h5>DOCTYPE-declaratie</h5>
+
+<p>Je begint een HTML-bestand altijd met een tag waarin een <strong>DOCTYPE</strong>-declaratie zit. Daarmee vertel je de webbrowser welke versie van HTML je gebruikt. Voor HTML5 is dat:</p>
+
+<pre><code class="html">&lt;!DOCTYPE html></code></pre>
+
+<p>Dit lijkt een heel algemene omschrijving, want er staat &lsquo;html&rsquo; en niet &lsquo;html 5&rsquo;. Maar deze DOCTYPE-declaratie geldt echt alleen voor HTML versie 5. De code om aan te geven dat je HTML versie 4 gebruikt is heel anders, namelijk:</p>
+
+<pre><code class="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"></code>
+</pre>
+&nbsp;
+
+<h5>html-element</h5>
+
+<p>Na de DOCTYPE-declaratie zet je het <strong>html-element</strong>. Dit is het hoofdelement van je bestand waarin je al je verdere code plaatst. Het html-element mag maar &eacute;&eacute;n keer voorkomen in je HTML5-bestand.</p>
+
+<pre><code class="html">&lt;!DOCTYPE html>
+&lt;html>
+
+&lt;/html></code></pre>
+
+<p>Je kunt het html-element als volgt uitbreiden:</p>
+
+<pre><code class="html">&lt;html lang="nl"></code></pre>
+
+<p>Door deze toevoeging zien zoekmachines en webbrowsers dat de webpagina is geschreven in de Nederlandse taal.</p>
+
+<p>In dit voorbeeld staat er nog niets binnen het html-element. Dat is uiteraard wel de bedoeling. Je plaatst altijd twee elementen in het html-element: het headelement en het body-element. Alle andere elementen plaats je in het head- &oacute;f in het body-element.</p>
+
+<h5>head-element</h5>
+
+<p>Het <strong>head-element</strong> bevat informatie over de website die je niet op de pagina zelf ziet. Zoals de titel (voor in de webbrowserbalk of op het titelblad), gegevens over de auteur van de website, informatie voor zoekmachines en gegevens over een eventueel opmaakbestand (dit komt in dit hoofdstuk nog niet aan bod).</p>
+&nbsp;
+
+<h5>title-element</h5>
+
+<p>De titel van het tabblad (in dit voorbeeld &lsquo;Hier komt een of andere titel&rsquo;) kun je in het head-element opgeven met het <strong>title-element</strong>:</p>
+
+<pre><code class="html">&lt;head>
+   &lt;title>Hier komt een of andere titel&lt;/title>
+&lt;/head></code></pre>
+&nbsp;
+
+<h5>body-element</h5>
+
+<p>Zoals gezegd plaats je het <strong>body-element</strong>, net als het head-element, in het html-element. Het body-element bevat de werkelijke inhoud van de pagina. Dus alle tekst, afbeeldingen enzovoort die de gebruiker te zien krijgt. Dit is een voorbeeld van een HTML-bestand met de head- en body-elementen:</p>
+
+<pre><code class="html">&lt;!DOCTYPE html>
+&lt;html lang="nl">
+   &lt;head>
+      &lt;title>Een of andere titel&lt;/title>
+   &lt;/head>
+
+   &lt;body>
+      De tekst van deze website.
+   &lt;/body>
+&lt;/html></code></pre>
+
+<p>Als je dit in de webbrowser Chrome bekijkt, ziet het er zo uit:</p>
+<img alt="" src="/docs/FundamentProgrammeren/HTML5/H2/Voorbeeld 1.png" style="width: 75%;" />
+<ul>
+	<li>de inhoud van het head-element op het tabblad;</li>
+	<li>de inhoud van het body-element op de pagina zelf.</li>
+</ul>
+&nbsp;
+
+<h5>meta-tags</h5>
+
+<p>In het head-element kunnen naast de titel van de website ook andere gegevens staan. Gegevens over de auteur van de website, informatie voor zoekmachines en gegevens over een eventueel opmaakbestand. Dit zijn de <strong>meta-tags</strong>. Een meta-tag heeft twee <strong>attributen</strong>, namelijk &lsquo;name&rsquo; en &lsquo;content&rsquo;.<!--'p--></p>
+
+<p>Dit zijn de meest gebruikte meta-tags:</p>
+
+<table border="1" class="tabel2" style="width: 100%;">
+	<tbody>
+		<tr>
+			<th style="width: 25%;">Name</th>
+			<th style="width: 75%;">Toepassing</th>
+		</tr>
+		<tr>
+			<td>author</td>
+			<td>Naam van de auteur</td>
+		</tr>
+		<tr>
+			<td>keywords</td>
+			<td>Zoekwoorden voor zoekmachines, door komma&#39;s gescheiden</td>
+		</tr>
+		<tr>
+			<td>description</td>
+			<td>Omschrijving van de website voor zoekmachines</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<p>Bijvoorbeeld:</p>
+
+<pre><code class="html">&lt;meta name="author" content="Uitgeverij Instruct">
+&lt;meta name="keywords" content="HTML5, head, body, meta-tags">
+&lt;meta name="description" content="Op deze pagina leer je de basis van HTML5!"></code></pre>
+
+<p>Naast deze drie meest gebruikte meta-tags is er een bijzondere meta-tag. Daarmee kun je opgeven van welk letterstelsel je website gebruikmaakt. Hiermee voorkom je dat speciale karakters, zoals &eacute;, &iuml; of &Acirc; verkeerd worden weergegeven. Deze meta-tag is als volgt:</p>
+
+<pre><code class="html">&lt;meta charset="utf-8"></code></pre>
+
+<p>In dit voorbeeld zijn de meeste meta-tags gebruikt:</p>
+
+<pre><code class="html">&lt;!DOCTYPE html>
+&lt;html lang="nl">
+   &lt;head>
+      &lt;title>Een of andere titel&lt;/title>
+      &lt;meta charset="utf-8">
+      &lt;meta name="author" content="Uitgeverij Instruct">
+      &lt;meta name="keywords" content="HTML5, head, body, meta-tags">
+      &lt;meta name="description" content="Op deze pagina leer je de basis van HTML5!">
+   &lt;/head>
+
+   &lt;body>
+      De tekst van deze website.
+   &lt;/body>
+</html></code></pre>
+
+<p>Als je dit in de webbrowser Chrome bekijkt, ziet het er nog steeds zo uit:</p>
+<img alt="" src="/docs/FundamentProgrammeren/HTML5/H2/Voorbeeld 1.png" style="width: 75%;" />
+<p>Voor de overzichtelijkheid van de voorbeeldcode die gegeven is, zijn de meta-tags weggelaten.</p>
+
+<p>In de bovenstaande code zie je dat het title-element en de meta-elementen in het head-element staan. We zeggen ook wel dat deze elementen <strong>genest</strong> zijn in het head-element. De elementen head en body zijn op hun beurt weer genest in het html-element.</p>
+
+<p>Het is gebruikelijk om geneste elementen door middel van tabs of spaties te laten inspringen. Zo is het ook gedaan in bovenstaand voorbeeld. Dit maakt je code overzichtelijk.</p>
+</div>
+		</div>
+
+
+		<div class="row continue" style="">
+
+			<div class="col-4 text-left">
+				<a href="/student/content.php?paragraaf_id=94652"><i class="fa fa-chevron-left"></i> Vorige</a>
+			</div>
+			<div class="col-4 text-center">
+				<a href="javascript:;" onClick="setBookmark(this, '94653');" class="btn btn-success btn-sm" data-value="1"><i id="done_icon" class="fa fa-square "></i> Begrepen</a>
+				<div id="done_melding"></div>
+			</div>
+			<div class="col-4 text-right">
+				<a href="/student/content.php?paragraaf_id=94654">Volgende <i class="fa fa-chevron-right"></i></a>
+			</div>
+
+		</div>
+
+		</div>
+	</div>
+</div>
+
+
+			<!--
+			<h4>Verder gaan</h4>
+			<ul class="course-accordion">
+				<li class="accordion-option">
+					<div class="option-title">1. Introductie HTML</div>
+					<div class="option-wrapper">
+						<ul class="option-items">
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94645">1.1. Inleiding</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94646">1.2. De codeertaal HTML</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94647">1.3. Browsen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94648">1.4. Het ontstaan van HTML</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94649">1.5. Zelf een HTML-bestand maken</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94650">1.6. HTML-code valideren</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="accordion-option">
+					<div class="option-title">2. Een webpagina maken</div>
+					<div class="option-wrapper">
+						<ul class="option-items">
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94651">2.1. Inleiding</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94652">2.2. Structuur van een HTML-document</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94653">2.3. De opbouw van een HTML5-document</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94654">2.4. Tekst opmaken</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94655">2.5. Hyperlinks en soorten URL&#039;s</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94656">2.6. Subpagina&#039;s maken</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94657">2.7. Commentaar</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94658">2.8. Opdrachten</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="accordion-option">
+					<div class="option-title">3. Multimedia</div>
+					<div class="option-wrapper">
+						<ul class="option-items">
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94659">3.1. Inleiding</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94660">3.2. Afbeeldingen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94661">3.3. Lijsten</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94662">3.4. Tabellen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94663">3.5. Embedden</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94664">3.6. Opdrachten</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="accordion-option">
+					<div class="option-title">4. Opmaak met CSS</div>
+					<div class="option-wrapper">
+						<ul class="option-items">
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94665">4.1. Inleiding</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94666">4.2. Opmaak met CSS</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94667">4.3. Basis opmaak met CSS</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94668">4.4. Kleuren en lettertypen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94669">4.5. Hyperlinks</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94670">4.6. Lijsten</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94671">4.7. Tabellen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94672">4.8. CSS-code valideren</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94673">4.9. Opdrachten</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="accordion-option">
+					<div class="option-title">5. Werken met blokken</div>
+					<div class="option-wrapper">
+						<ul class="option-items">
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94674">5.1. Inleiding</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94675">5.2. Blokken</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94676">5.3. Standaardblokken en divisions</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94677">5.4. Opmaak van geneste elementen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94678">5.5. Margin, padding en border van een blok</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94679">5.6. De afmetingen van een blok</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94680">5.7. Margin, padding en border bij andere elementen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94681">5.8. De wrapper</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94682">5.9. Floating</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94683">5.10. De blokken op de juiste plaats</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94684">5.11. Een volgorde voor de blokken kiezen</a>
+							</li>
+							<li class="option-item">
+								<div class="pull-right">
+									<span class="duration">0.15 h</span><a href="#"><i class="zmdi zmdi-star"></i></a>
+								</div>
+								<a href="content.php?paragraaf_id=94685">5.12. Opdrachten</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			-->
+
+
+<footer style="display:none;">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="/"><img src="/assets/images/logo.png" alt="Logo"></a>
+                <ul class="contactinfo">
+                    <li class="address"><strong>Adres:</strong> Denemarkenweg 13, Bodegraven</li>
+                    <li class="phone"><strong>Telefoon:</strong> +31 172 650983</li>
+                    <li class="email"><strong>E-mail:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58c8b838aa58c8b969197908691cb8b89">[email&#160;protected]</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>GET HELP</h6>
+                <ul class="information">
+                    <li><a href="#">Help and FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>INFORMATIE</h6>
+                <ul class="information">
+                    <li><a href="#">Instruct</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>MIJN ACCOUNT</h6>
+                <ul class="information">
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <h6>QUICKLINKS</h6>
+                <ul class="information">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row botbar">
+            <div class="col-sm-7">
+                <p class="copyright">Copyright 2018 &copy; Instruct</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/public/page/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="/public/page/js/bundle2.js" defer></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/assets/libs/rslides/responsiveslides.min.js?v=v2-20200214"></script>
+<script type="text/javascript" src="/assets/libs/slick/slick.min.js?v=v2-20200214"></script>
+
+
+<script type="text/javascript" src="/shared/js/sticky/jquery.sticky.js?v=v2-20200214"></script>
+
+<script type="text/javascript" src="/shared/js/featherlight-1.7.13/release/featherlight.min.js?v=v2-20200214"></script>
+<script type="text/javascript" src="/shared/js/highlight/highlight.pack.js?v=v2-20200214"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+
+<script type="text/javascript" src="/shared/js/amcharts/amcharts/amcharts.js?v=v2-20200214"></script>
+<script type="text/javascript" src="/shared/js/amcharts/amcharts/pie.js?v=v2-20200214"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#sticker").sticky({topSpacing:0});
+    });
+
+    function meldingen_empty() {
+        $('#done_melding').hide();
+    }
+
+    function verwijder_werkvorm_antwoorden(paragraafid = 0) {
+        $('#ontwikkeling_melding').load('/ajax.calls.php?action=verwijder_werkvorm_antwoorden&paragraafid=' + paragraafid);
+    }
+
+    function verwijder_pagina_views() {
+        $('#ontwikkeling_melding').load('/ajax.calls.php?action=verwijder_pagina_views');
+    }
+
+    function setBookmark(obj, paragraph_id) {
+        var newValue = parseInt($(obj).data('value'));
+        $('#done_melding').load('/ajax.calls.php?action=bookmark&paragraph_id=' + paragraph_id + '&value=' + newValue);
+
+        if (newValue === 0) {
+            $('#done_icon').removeClass("fa-check-square").addClass("fa-square");
+            $(obj).data('value', 1);
+        } else {
+            $('#done_icon').removeClass("fa-square").addClass("fa-check-square");
+            $(obj).data('value', 0);
+        }
+        setTimeout(meldingen_empty, 3000);
+    }
+
+    function setFavoriet(obj, paragraph_id, mode) {
+        var newValue = parseInt($(obj).data('value'));
+
+        $.get('/ajax.calls.php?action=favorite&paragraph_id=' + paragraph_id + '&value=' + newValue, function (data) {
+
+            if (mode == 1) {
+                if (newValue === 0) {
+                    $(obj).children('.fav-text').html('<span class="fav-text">Verwijderd als favoriet');
+                    $(obj).parent().children('.fa-star').removeClass('fas').addClass('far');
+                    $(obj).data('value', 1);
+                } else {
+                    $(obj).children('.fav-text').html('<span class="fav-text">Toegevoegd als favoriet');
+                    $(obj).parent().children('.fa-star').removeClass('far').addClass('fas');
+                    $(obj).data('value', 0);
+                }
+            } else {
+                $(obj).parent().parent().remove();
+                if ($("#favorite_table tr").length === 0) {
+                    $("#no_favorites").removeClass('d-none');
+                }
+            }
+        });
+    }
+
+
+    function changefontfamily(newfont) {
+        $('#ajcalls').load('/ajax.calls.php?action=changefontfamily&newfont=' + newfont);
+
+        newfont = newfont.replace('Fira-Sans', 'Fira Sans');
+        newfont = newfont.replace('Work-Sans', 'Work Sans');
+        newfont = newfont.replace('Space-Mono', 'Space Mono');
+
+        $('#ff10').removeClass("ffactive");
+        $('#ff11').removeClass("ffactive");
+        $('#ff12').removeClass("ffactive");
+        $('#ff13').removeClass("ffactive");
+        $('#ff14').removeClass("ffactive");
+        $('#ff15').removeClass("ffactive");
+
+        if (newfont == 'Fira Sans') {
+            $('#ff10').addClass("ffactive");
+        }
+        if (newfont == 'Work Sans') {
+            $('#ff11').addClass("ffactive");
+        }
+        if (newfont == 'open-dyslexic') {
+            $('#ff12').addClass("ffactive");
+        }
+        if (newfont == 'Montserrat') {
+            $('#ff13').addClass("ffactive");
+        }
+        if (newfont == 'Merriweather') {
+            $('#ff14').addClass("ffactive");
+        }
+        if (newfont == 'Space Mono') {
+            $('#ff15').addClass("ffactive");
+        }
+
+
+        $('body').css("font-family", newfont);
+    }
+
+    function changefontsize(newsize) {
+        $('#ajcalls').load('/ajax.calls.php?action=changefontsize&newsize=' + newsize);
+
+        var lineheight = parseInt(newsize) + 10;
+
+        $('#fs11').removeClass("fsactive");
+        $('#fs12').removeClass("fsactive");
+        $('#fs13').removeClass("fsactive");
+        $('#fs14').removeClass("fsactive");
+        $('#fs15').removeClass("fsactive");
+        $('#fs16').removeClass("fsactive");
+
+        if (newsize == '11') {
+            $('#fs11').addClass("fsactive");
+        }
+        if (newsize == '12') {
+            $('#fs12').addClass("fsactive");
+        }
+        if (newsize == '13') {
+            $('#fs13').addClass("fsactive");
+        }
+        if (newsize == '14') {
+            $('#fs14').addClass("fsactive");
+        }
+        if (newsize == '15') {
+            $('#fs15').addClass("fsactive");
+        }
+        if (newsize == '16') {
+            $('#fs16').addClass("fsactive");
+        }
+
+        $('.course').css("font-size", newsize + "px");
+        $('.course').css("line-height", lineheight + "px");
+    }
+
+    // Send the answer to the system
+    var send_answer = function (question_id, a, check, paragraph_id = 0) {
+        var res = null;
+        $.ajax({
+            type: 'POST',
+            url: '/werkvormen/answer.php',
+            async: false,
+            data: {
+                'question_id': question_id,
+                'paragraph_id': paragraph_id,
+                'check': check,
+                'answer': a
+            },
+            context: document.body,
+            success: function (data) {
+                res = data;
+                //	location.href = "q.php?nextquestion=1&activetest_id=28986&check=4a51f5d3da782872bf9a1bc92c7eba2b&this_useranswer=319644"
+            }
+        });
+        return res;
+    }
+
+    $('.select_url').on('change', function () {
+        var url = $(this).val(); // get selected value
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+    });
+
+</script>
+
+
+<script type="text/javascript">
+    
+</script>
+
+
+
+
+<script type="text/javascript">
+</script>
+
+
+
+
+
+
+
+
+<!-- PH tbv tooltip -->
+<script src="/public/scripts.js" type="text/javascript"></script>
+
+<!-- PAUL: DATATABLES BLOCK. WHEN REWRITING WE WANT THIS TO BE A DEFAULT LIB IN THE DOCENT OMGEVING -->
+<link rel="stylesheet" type="text/css"
+      href="/public/page/css/datatables.min.css"/>
+
+<script type="text/javascript"
+        src="/public/page/js/datatables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.dataTable').DataTable({
+            paging: false,
+            "language": {
+                "sProcessing": "Bezig...",
+                "sLengthMenu": "_MENU_ resultaten weergeven",
+                "sZeroRecords": "Geen resultaten gevonden",
+                "sInfo": "_START_ tot _END_ van _TOTAL_ resultaten",
+                "sInfoEmpty": "Geen resultaten om weer te geven",
+                "sInfoFiltered": " (gefilterd uit _MAX_ resultaten)",
+                "sInfoPostFix": "",
+                "sSearch": "Filteren binnen resultaten: ",
+                "sEmptyTable": "Geen resultaten aanwezig in de tabel",
+                "sInfoThousands": ".",
+                "sLoadingRecords": "Een moment geduld aub - bezig met laden...",
+                "oPaginate": {
+                    "sFirst": "Eerste",
+                    "sLast": "Laatste",
+                    "sNext": "Volgende",
+                    "sPrevious": "Vorige"
+                },
+                "oAria": {
+                    "sSortAscending": ": activeer om kolom oplopend te sorteren",
+                    "sSortDescending": ": activeer om kolom aflopend te sorteren"
+                }
+            }
+
+        });
+    });
+</script>
+</body>
+</html>
