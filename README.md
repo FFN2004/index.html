@@ -29,17 +29,17 @@
 
    
     
-   <li><a href="home.html" ; target:"_blank" ;>home</a></li>
-    <li><a href="taakverdeling.html" ; target:"_blank" ;>taakverdeling</a></li>
-    <li><a href="C4.html" ; target:"_blank" ;>C4</a></li>
-     <li><a href="A2.html" ; target:"_blank" ;>A2</a></li>
-       <li><a href="eigenschappen.html" ; target:"_blank" ;>css eigenschappen</a></li> 
+   <li><a href="home.html">home</a></li>
+    <li><a href="taakverdeling.html">taakverdeling</a></li>
+    <li><a href="C4.html">C4</a></li>
+     <li><a href="A2.html">A2</a></li>
+       <li><a href="eigenschappen.html">css eigenschappen</a></li> 
    </ul>
 
 
-   <div class="banner"
+   <div class="banner">
    
-      <!-img class="banner-image" src="img/IMG_6573.JPG"->
+      <!--img class="banner-image" src="img/IMG_6573.JPG"-->
   
   
   </div>
