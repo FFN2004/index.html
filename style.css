@@ -100,6 +100,11 @@ p{
    text-align:center;
     font-familiy:Monospace;
 }
+li{
+   color: #000000;
+   text-align:center;
+    font-familiy:Monospace;
+}
   img {
 
 display: block;
