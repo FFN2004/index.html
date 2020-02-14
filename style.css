@@ -11,7 +11,6 @@ body {
 }
 
 .nav-closed{
-  dispay: flex;
   width: 90%;
   height: 10vh;
   margin:auto;
@@ -69,7 +68,7 @@ text-align:left;
 .container1{
   width:400px;
    height:400px;
-    margin-left:10;
+    margin-left:10px;
      float:left;
       background-color:#483D8B;
        position:relative;
@@ -85,7 +84,6 @@ h1{
 }
 h2{
   color: #8B008B;
-  text-shadow: #FF1493;
    text-align:center;
     font-family:Monospace;
 }
@@ -98,12 +96,10 @@ h3{
 p{
   color: #000000;
    text-align:center;
-    font-familiy:Monospace;
 }
 li{
    color: #000000;
    text-align:center;
-    font-familiy:Monospace;
 }
   img {
 
